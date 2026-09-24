@@ -7,6 +7,11 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.terraform/
+.terragrunt-cache/
+.terraform.lock.hcl
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
