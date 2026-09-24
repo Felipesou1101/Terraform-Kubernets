@@ -10,6 +10,7 @@ __pycache__/
 .terraform/
 .terragrunt-cache/
 .terraform.lock.hcl
+# terraform.tfvars -> Estou desmarcando, pois é um repositorio de teste para eu apreder a usar o terraform 
 
 # Distribution / packaging
 .Python

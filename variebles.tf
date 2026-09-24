@@ -139,3 +139,22 @@ output "instance_id" {
     description = "ID da instância EC2 criada"
     sensitive = false
 }
+
+# Variaveis de ambiente
+
+## Precedência de variáveis de ambiente sobre variáveis definidas no arquivo .tfvars, que por sua vez tem precedência sobre variáveis definidas no arquivo .tf
+
+# Variáveis de ambiente podem ser definidas de 3 formas: por meio da opção -var, por meio de variáveis de ambiente do sistema e pelo arquivo de definição de variáveis .tfvars
+
+variable "random_length" {
+  default = 16
+}
+
+variable "random_separator" {
+  default = "-"
+}
+
+resource "random_pet" "olá" {
+  length = var.random_length
+  separator = var.random_separator
+}
