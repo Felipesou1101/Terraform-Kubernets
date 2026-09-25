@@ -13,4 +13,6 @@ Revisão das alterações que o terraform irá fazer na infraestrutura
 Ele aplica a infrestrutura
 
 
+# AWS pricing Calculet
 
+https://calculator.aws/#/ 
