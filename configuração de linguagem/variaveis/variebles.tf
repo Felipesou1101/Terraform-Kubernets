@@ -87,6 +87,14 @@ variable "map" {
     description = "Tags para a instância EC2" # Informação adicional sobre a variável
 }
 
+variable "map-list" {
+    type = map(any)                      # Tipo da variável
+    default = { 
+        12 = "Valor 12"  
+        "Valor 13" = 13                          # Valor padrão
+    }
+}
+
 ## Objetos
 
 variable "object-Aluno" {
